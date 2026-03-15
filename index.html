@@ -1,22 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>teuma公式サイト</title>
-
   <title>teuma公式サイト</title>
 
   <style>
     body {
       background: #f2f2f2;
       font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      margin: 0;
+      padding: 20px;
     }
 
     /* カード枠 */
     .card {
       background: #ffffff;
       max-width: 520px;
-      margin: 80px auto;
-      padding: 40px;
+      margin: 20px auto;
+      padding: 32px 24px;
       border-radius: 20px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
       text-align: left;
@@ -24,12 +26,30 @@
 
     .card h1 {
       margin-top: 0;
+      margin-bottom: 20px;
       font-size: 28px;
+    }
+
+    .card h2 {
+      margin-top: 28px;
+      margin-bottom: 14px;
+      font-size: 22px;
+    }
+
+    .card p {
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    .card ul {
+      padding-left: 20px;
+      line-height: 1.8;
+      font-size: 16px;
     }
 
     a.button {
       display: block;
-      margin-top: 30px;
+      margin-top: 20px;
       padding: 16px;
       color: #fff;
       text-align: center;
@@ -43,11 +63,19 @@
       transform: translateY(-2px);
     }
 
-    a.youtube { background: #ff4757; }
-    a.youtube:hover { background: #ff6b81; }
+    a.youtube {
+      background: #ff4757;
+    }
+    a.youtube:hover {
+      background: #ff6b81;
+    }
 
-    a.tiktok { background: #000; }
-    a.tiktok:hover { background: #333; }
+    a.tiktok {
+      background: #000;
+    }
+    a.tiktok:hover {
+      background: #333;
+    }
 
     a.instagram {
       background: linear-gradient(
@@ -59,10 +87,52 @@
         #515bd4
       );
     }
-    a.instagram:hover { filter: brightness(1.1); }
+    a.instagram:hover {
+      filter: brightness(1.1);
+    }
 
-    a.x { background: #000; }
-    a.x:hover { background: #1a1a1a; }
+    a.x {
+      background: #000;
+    }
+    a.x:hover {
+      background: #1a1a1a;
+    }
+
+    a.contact {
+      background: #4285f4;
+    }
+    a.contact:hover {
+      background: #5a95f5;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 12px;
+      }
+
+      .card {
+        margin: 10px auto;
+        padding: 24px 18px;
+      }
+
+      .card h1 {
+        font-size: 24px;
+      }
+
+      .card h2 {
+        font-size: 20px;
+      }
+
+      .card p,
+      .card ul {
+        font-size: 15px;
+      }
+
+      a.button {
+        padding: 14px;
+        font-size: 15px;
+      }
+    }
   </style>
 </head>
 
@@ -99,8 +169,10 @@
     <a class="button x" href="https://x.com/teuma1865510" target="_blank">
       ▶ Xアカウント
     </a>
+
+    <a class="button contact" href="https://docs.google.com/forms/d/e/1FAIpQLSc12ZSix4HOIaPDc_cH5mKv2j-bK6O6YjhyznJnsqQCyyJGpQ/viewform?usp=publish-editor" target="_blank">
+      ▶ お問合せホーム
+    </a>
   </div>
 </body>
 </html>
-
-
